@@ -1,0 +1,6 @@
+{
+    "viewportWidth": 1400,
+    "viewportHeight": 900,
+    "defaultCommandTimeout": 10000,
+    "baseUrl": "https://www.lojasrenner.com.br/"
+}
