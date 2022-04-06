@@ -14,11 +14,6 @@ class LoginPage {
     efetuarLogin() {
         (loginElements.efetuarLogin())
     }
-
-    // Verifica seesta logado com sucesso
-    validoLogin() {
-        (loginElements.validoLogin())
-    }
 }
 
 export default LoginPage;

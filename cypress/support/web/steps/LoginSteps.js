@@ -12,5 +12,5 @@ When("inserir dados de login validos", () => {
 })
 
 Then("efetuo login com sucesso", () => {
-    loginPage.validoLogin();
+    cy.contains('Usuario')
 })
