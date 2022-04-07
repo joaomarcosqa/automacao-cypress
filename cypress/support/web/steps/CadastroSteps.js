@@ -6,26 +6,20 @@ const loginPage = new LoginPage
 const cadastroPage = new CadastroPage
 
 Given("que eu esteja na pagina de cadastro", () => {
-    loginPage.acessarSite();
-    loginPage.efetuarLogin();
-    cy.contains('Usuario')
+    cadastroPage.acessarTelaDeCadastro();
 })
 
 When("inserir dados de cadastro validos", () => {
-    cadastroPage.acessarTelaDeCadastro();
     cadastroPage.inserirDadosValidos();
 })
 
 Then("efetuo cadastro com sucesso", () => {
-    // cy.contains('msg sucesso')
-    cy.contains('Usuario')
+    cy.contains('msg sucesso')
 })
 When("inserir dados de cadastro invalidos", () => {
-    cadastroPage.acessarTelaDeCadastro();
     cadastroPage.InserirDadosInvalidos();
 })
 
 Then("não efetuo cadastro", () => {
-    // cy.contains('msg erro')
-    cy.contains('Usuario')
+    cy.contains('msg erro')
 })
